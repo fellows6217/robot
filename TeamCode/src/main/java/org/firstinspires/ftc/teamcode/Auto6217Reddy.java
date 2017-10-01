@@ -21,7 +21,6 @@ import com.qualcomm.robotcore.hardware.OpticalDistanceSensor;
 /*
  * Created by Ben on 11/4/16.
  *
- * 
  */
 public class Auto6217Reddy extends LinearOpMode {
 

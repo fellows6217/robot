@@ -24,7 +24,8 @@ import java.lang.Math;
 public class TeleOp6217 extends OpMode
 {
 /*FR = Front Right Wheel, FL = Front Left Wheel, BR = Back Righ Wheelt, BL = Back Left Wheel,
-BG = Ball Grabber, WBT = Wiffle Ball Thrower, BGL = Ball Grabber Lifter, BP = Blast Plate, CS1 = color sensor 1*/
+BG = Ball Grabber, WBT = Wiffle Ball Thrower, BGL = Ball Grabber Lifter, BP = Blast Plate,
+CS1 = color sensor 1*/
     DcMotor motorFR;
     DcMotor motorFL;
     DcMotor motorBR;

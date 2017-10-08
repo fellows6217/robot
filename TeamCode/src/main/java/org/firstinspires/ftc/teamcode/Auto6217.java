@@ -61,7 +61,7 @@ import org.firstinspires.ftc.robotcontroller.external.samples.HardwarePushbot;
  *  In order to calibrate the Gyro correctly, the robot must remain stationary during calibration.
  *  This is performed when the INIT button is pressed on the Driver Station.
  *  This code assumes that the robot is stationary when the INIT button is pressed.
- *  If this is not the case, then the INIT should be performed again
+ *  If this is not the case, then the INIT should be performed again.
  *
  *  Note: in this example, all angles are referenced to the initial coordinate frame set during the
  *  the Gyro Calibration process, or whenever the program issues a resetZAxisIntegrator() call on the Gyro.

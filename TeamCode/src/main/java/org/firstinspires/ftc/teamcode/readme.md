@@ -123,3 +123,5 @@ Test comment for Branch 2
 6)  Open up Android Studios and clean out any old files by using the menu to "Build/Clean Project""
 
 Test comment for Branch 1
+
+Another test comment for the pull request

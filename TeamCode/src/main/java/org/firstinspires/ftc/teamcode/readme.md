@@ -60,6 +60,8 @@ This is done inside Android Studio directly, using the following steps:
     Choose something meaningful based on the purpose of this class.
     Start with a capital letter, and remember that there may be more similar classes later.
 
+a change
+
 Once your copy has been created, you should prepare it for use on your robot.
 This is done by adjusting the OpMode's name, and enabling it to be displayed on the
 Driver Station's OpMode list.

@@ -9,6 +9,8 @@ robot controller App. This module is currently empty (a clean slate) but the
 process for adding OpModes is straightforward.
 
 ## Creating your own OpModes
+line 1
+line 2
 
 The easiest way to create your own OpMode is to copy a Sample OpMode and make it your own.
 
@@ -59,6 +61,8 @@ This is done inside Android Studio directly, using the following steps:
  5) You will be prompted for a class name for the copy.
     Choose something meaningful based on the purpose of this class.
     Start with a capital letter, and remember that there may be more similar classes later.
+
+a change
 
 Once your copy has been created, you should prepare it for use on your robot.
 This is done by adjusting the OpMode's name, and enabling it to be displayed on the

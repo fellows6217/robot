@@ -1,5 +1,7 @@
 ## TeamCode Module
 
+Here's an edit that I made to this file, because this is where Glenda said to make changes so we don't mess up anything useful or important,
+
 Welcome!
 
 This module, TeamCode, is the place where you will write/paste the code for your team's
@@ -57,6 +59,8 @@ This is done inside Android Studio directly, using the following steps:
  5) You will be prompted for a class name for the copy.
     Choose something meaningful based on the purpose of this class.
     Start with a capital letter, and remember that there may be more similar classes later.
+
+a change
 
 Once your copy has been created, you should prepare it for use on your robot.
 This is done by adjusting the OpMode's name, and enabling it to be displayed on the

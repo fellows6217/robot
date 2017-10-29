@@ -21,7 +21,7 @@ import java.lang.Math;
 
 @TeleOp(name="Preciousss: TeleOp6217 ", group="Preciousss")
 
-public class TeleOp6217 extends OpMode
+public class TeleOp6217_DRC extends OpMode
 {
 /*FR = Front Right Wheel, FL = Front Left Wheel, BR = Back Righ Wheelt, BL = Back Left Wheel,
 BG = Ball Grabber, WBT = Wiffle Ball Thrower, BGL = Ball Grabber Lifter, BP = Blast Plate, CS1 = color sensor 1*/
@@ -47,7 +47,7 @@ BG = Ball Grabber, WBT = Wiffle Ball Thrower, BGL = Ball Grabber Lifter, BP = Bl
     private int DelayCounter = 0;
     private int DelayTimer = 400 ;
 
-    public TeleOp6217() {}
+    public TeleOp6217_DRC() {}
 
     @Override
     public void init()

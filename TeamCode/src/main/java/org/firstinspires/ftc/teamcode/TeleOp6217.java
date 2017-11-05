@@ -17,7 +17,7 @@ import java.lang.Math;
 
 
 
-@TeleOp(name="Preciousss: TeleOp6217 ", group="Preciousss")
+@TeleOp(name="TeleOp6217_2016 ", group="Preciouss")
 
 public class TeleOp6217 extends OpMode
 {

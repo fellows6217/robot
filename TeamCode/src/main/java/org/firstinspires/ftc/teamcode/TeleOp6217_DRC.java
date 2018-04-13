@@ -19,9 +19,9 @@ import java.lang.Math;
 
 
 
-@TeleOp(name="Preciousss: TeleOp6217 ", group="Preciousss")
+@TeleOp(name="Preciousss: TeleOp6217_DRC ", group="Preciousss")
 
-public class TeleOp6217 extends OpMode
+public class TeleOp6217_DRC extends OpMode
 {
 /*FR = Front Right Wheel, FL = Front Left Wheel, BR = Back Righ Wheelt, BL = Back Left Wheel,
 BG = Ball Grabber, WBT = Wiffle Ball Thrower, BGL = Ball Grabber Lifter, BP = Blast Plate, CS1 = color sensor 1*/
@@ -29,7 +29,6 @@ BG = Ball Grabber, WBT = Wiffle Ball Thrower, BGL = Ball Grabber Lifter, BP = Bl
     DcMotor motorFL;
     DcMotor motorBR;
     DcMotor motorBL;
-    DcMotor motorBG;
 //    DcMotor motorWBT1;
 //    DcMotor motorBGL;
 //    DcMotor motorWBT2;
@@ -43,11 +42,9 @@ BG = Ball Grabber, WBT = Wiffle Ball Thrower, BGL = Ball Grabber Lifter, BP = Bl
 
     private ElapsedTime     runtime = new ElapsedTime();
 
-    private boolean RunLauncher = false;
-    private int DelayCounter = 0;
-    private int DelayTimer = 400 ;
 
-    public TeleOp6217() {}
+
+    public TeleOp6217_DRC() {}
 
     @Override
     public void init()
@@ -64,30 +61,11 @@ BG = Ball Grabber, WBT = Wiffle Ball Thrower, BGL = Ball Grabber Lifter, BP = Bl
         motorBR = hardwareMap.dcMotor.get("motorBR");
         motorBR.setDirection(DcMotor.Direction.REVERSE);
 
-        modernRoboticsI2cGyro = hardwareMap.get(ModernRoboticsI2cGyro.class, "gyro");
-        gyro = (IntegratingGyroscope)modernRoboticsI2cGyro;
-
-
-//        motorWBT1 = hardwareMap.dcMotor.get("c3_motor1");
-//        motorWBT2 = hardwareMap.dcMotor.get("c3_motor2");
-//        motorWBT2.setDirection(DcMotor.Direction.REVERSE);
-//        motorBGL = hardwareMap.dcMotor.get("c4_motor1");
-//        motorBG = hardwareMap.dcMotor.get("c4_motor2");
-//        Conveyor1 = hardwareMap.crservo.get("Servo1");
-//        Conveyor1.setDirection(CRServo.Direction.FORWARD);
-//        Sweeper1 = hardwareMap.crservo.get("Servo2");
-//        Sweeper2 = hardwareMap.crservo.get("Servo4");
-//        Conveyor2 = hardwareMap.crservo.get("Servo3");
-//        Conveyor2.setDirection(CRServo.Direction.REVERSE);
+      //  modernRoboticsI2cGyro = hardwareMap.get(ModernRoboticsI2cGyro.class, "gyro")
+      //  gyro = (IntegratingGyroscope)modernRoboticsI2cGyro;
 
 
 
-
-       /* telemetry.addData("Status", "Resetting Encoders");    //
-        telemetry.update();
-        telemetry.addData("WBG",  "Starting at %7d",
-               // motorWBT1.getCurrentPosition());
-        telemetry.update());*/
 
     }
 
@@ -153,88 +131,7 @@ BG = Ball Grabber, WBT = Wiffle Ball Thrower, BGL = Ball Grabber Lifter, BP = Bl
             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
-/*
-        // use ball thrower
-        if (a) {¡
-            Sweeper1.setPower(-1);
-            Conveyor1.setPower(1);
-            Conveyor2.setPower(1);
-        }
 
-
-        else {
-            Sweeper1.setPower(0);
-
-            if (!RunLauncher)  {
-                Conveyor1.setPower(0);
-                Conveyor2.setPower(0);
-            }
-        }
-
-        if ( y ) {
-            if (!RunLauncher) {
-                RunLauncher = true;
-                motorWBT1.setPower(-1);
-                motorWBT2.setPower(-1);
-                DelayCounter = 0;
-            } else {
-                RunLauncher = false;
-            }
-        }
-
-        telemetry.addData("5", "RunLauncher:" + " " +
-                String.format("%b", RunLauncher));
-
-        if (RunLauncher) {
-            DelayCounter++;
-
-            if (DelayCounter >= DelayTimer) {
-                Sweeper2.setPower(
-                        1);
-                Conveyor1.setPower(1);
-                Conveyor2.setPower(1);
-            }
-        }
-
-        else {
-            motorWBT1.setPower(0);
-            motorWBT2.setPower(0);
-            Sweeper2.setPower(0);
-
-            if (!a)  {
-                Conveyor1.setPower(0);
-                Conveyor2.setPower(0);
-            }
-
-        }
-        if (UP) {
-            motorBGL.setPower(1.0);
-        }
-
-        else if (DOWN)  {
-            motorBGL.setPower(-1.0);
-        }
-
-        else {
-            motorBGL.setPower(0);
-        }
-
-        //ball Grabber
-        if (Open) {
-            motorBG.setPower(0.5);
-
-        }
-
-            else if (Close)  {
-            motorBG.setPower(-1);
-
-        }
-
-            else {
-            motorBG.setPower(0);
-        }
-
- */
 
         //  pivot left
 

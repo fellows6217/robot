@@ -1,4 +1,4 @@
-/* Team 6217
+ /* Team 6217
     The Fellowship
     2016 - 2017 Velocity Vortex Robot Code */
 
@@ -19,10 +19,10 @@ public class ArmTest extends OpMode
 {
 /*FR = Front Right Wheel, FL = Front Left Wheel, BR = Back Righ Wheelt, BL = Back Left Wheel,
 BG = Ball Grabber, WBT = Wiffle Ball Thrower, BGL = Ball Grabber Lifter, BP = Blast Plate, CS1 = color sensor 1*/
-    DcMotor motorFR;
+  /*  DcMotor motorFR;
     DcMotor motorFL;
     DcMotor motorBR;
-    DcMotor motorBL;
+    DcMotor motorBL;  */
     Servo ServoGlyphGrabber1;
     Servo ServoGlyphGrabber2;
     DcMotor GlyphGrabberLifter;
@@ -42,14 +42,14 @@ BG = Ball Grabber, WBT = Wiffle Ball Thrower, BGL = Ball Grabber Lifter, BP = Bl
       /*
        * Wheels: controller 1, motors 1,2,3,4
        */
-        motorFL = hardwareMap.dcMotor.get("motorFL");
+      /*  motorFL = hardwareMap.dcMotor.get("motorFL");
         motorFL.setDirection(DcMotor.Direction.FORWARD);
         motorFR = hardwareMap.dcMotor.get("motorFR");
         motorFR.setDirection(DcMotor.Direction.REVERSE);
         motorBL = hardwareMap.dcMotor.get("MotorBL");
         motorBL.setDirection(DcMotor.Direction.FORWARD);
         motorBR = hardwareMap.dcMotor.get("MotorBR");
-        motorBR.setDirection(DcMotor.Direction.REVERSE);
+        motorBR.setDirection(DcMotor.Direction.REVERSE);  */
         GlyphGrabberLifter = hardwareMap.dcMotor.get("GlyphGrabberLifter");
         ServoGlyphGrabber1 = hardwareMap.servo.get("ServoGlyphGrabber1");
         ServoGlyphGrabber2 = hardwareMap.servo.get("ServoGlyphGrabber2");
@@ -91,7 +91,7 @@ BG = Ball Grabber, WBT = Wiffle Ball Thrower, BGL = Ball Grabber Lifter, BP = Bl
         // Stick values range from -1 to 1, where -1 is full up, and 1 is full down
         // Trigger values range from 0 to 1
 
-        /* posx = Position X, posy = Position Y, LT = Left Trigger, RT = Right Trigger,
+         /*posx = Position X, posy = Position Y, LT = Left Trigger, RT = Right Trigger,
          a = Button a, y = Button y, x = Button x, b = Button b, UP = BGL Going Up, DOWN = BGL Going Down,
          AA = Arm Angle, Close = BG closing, Open = BG opening, BPD = Blast Protector Down, BPU = Blast Protector Up,
          GP = Grab Particles, PPIWBT = Put Partciles Into Wiffle Ball Thrower,Beacon = Push Beacons. */
@@ -127,42 +127,20 @@ BG = Ball Grabber, WBT = Wiffle Ball Thrower, BGL = Ball Grabber Lifter, BP = Bl
             Write power to wheels
             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-
-
-
-
         // Glyph Grabber 0 out
         if (a) {
             ServoGlyphGrabber1.setPosition(0);
             ServoGlyphGrabber2.setPosition(0);
-        }
-
-
-        else {
-         
-            
-        }
+            }
         // opens the Glyph grabber
-        if ( y ) {
-            ServoGlyphGrabber1.setPosition(100);
-            ServoGlyphGrabber2.setPosition(100);
-            } else {
-                
+        else if ( y ) {
+            ServoGlyphGrabber1.setPosition(.5);
+            ServoGlyphGrabber2.setPosition(-.5);
+            }
+        else if (x) {
+            ServoGlyphGrabber1.setPosition(.4);
+            ServoGlyphGrabber2.setPosition(-.4);
         }
-
-
-        if (x) {
-            ServoGlyphGrabber1.setPosition(80);
-            ServoGlyphGrabber2.setPosition(80);
-
-
-        }
-
-        else {
-
-
-        }
-
 
         if ( UP )  {
             GlyphGrabberLifter.setPower(.5);
@@ -181,7 +159,7 @@ BG = Ball Grabber, WBT = Wiffle Ball Thrower, BGL = Ball Grabber Lifter, BP = Bl
             GlyphGrabberLifter.setPower(0);
         }
 
-        //  pivot left
+       /* //  pivot left
 
             if (LT != 0)  {
 
@@ -223,8 +201,7 @@ BG = Ball Grabber, WBT = Wiffle Ball Thrower, BGL = Ball Grabber Lifter, BP = Bl
                 motorBR.setPower(0);
                 motorBL.setPower(0);
             }
-
-
+            */
         /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             Write telemetry back to driver station
             NOTE: Output is sorted by the first field, hence the numbering
